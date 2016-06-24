@@ -1,0 +1,302 @@
+/* 
+Author: Sayantan Das
+Date: 16-06-2016
+ */
+
+ body {
+ 	margin:0;
+ 	font-family: Segoe UI;
+ }
+
+/* banner */
+.banner {
+	background: url('../../images/banner.jpg')no-repeat center 0px;
+	background-size: cover;
+	position:relative;
+	min-height: 500px;
+}
+
+.overlay {
+	background:rgba(0,0,0,0.5);
+	min-height: inherit;
+}
+
+.banner-header {
+	color:white;
+	text-align: center;
+	border-bottom: 1px solid #fff;
+}
+
+.banner-header h1 {
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 300;
+	letter-spacing: 10px;
+	margin-top:200px;
+}
+
+.banner-header h2 {
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-weight: 200;
+}
+
+.banner-header p {
+	padding: 10px 0;
+	width: 66%;
+	margin:0 auto;
+}
+
+/* Adding responsiveness to the banner */
+@media (max-width: 1024px){
+	.banner {
+	    min-height: 400px;
+	}
+
+	.banner-header h1 {
+		font-size:50px;
+		margin-top: 150px;
+	}
+}
+
+@media (max-width: 720px){
+	.banner {
+	    min-height: 300px;
+	}
+
+	.banner-header h1 {
+		font-size:40px;
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 550px){
+	.banner {
+	    min-height: 300px;
+	}
+
+	.banner-header h1 {
+		font-size:40px;
+		margin-top: 65px;
+	}
+
+	.banner-header p {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 360px){
+	.banner {
+	    min-height: 200px;
+	}
+
+	.banner-header {
+		border:none;
+	}
+
+	.banner-header h1 {
+		font-size:30px;
+		margin-top: 40px;
+	}
+}
+
+/* Banner navigation */
+.navbar-default {
+	background-color: transparent;
+	border:none;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	background:rgba(0,0,0,0.25);
+    color:#fff;
+}
+
+/* Responsiveness to banner nav */
+@media (max-width: 1024px){
+	.navbar-default {
+		margin-bottom: 8px;
+		margin-top: 35px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+	    font-size: 18px;
+	    letter-spacing: 5px;
+	}
+}
+
+@media (max-width: 720px){
+	.navbar-default {
+		margin-bottom: 8px;
+		margin-top: 30px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+	    font-size: 18px;
+	    letter-spacing: 5px;
+	}
+}
+
+@media (max-width: 550px){
+	.navbar-default {
+		margin-bottom: 8px;
+		margin-top: 30px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+	    font-size: 16px;
+	    letter-spacing: 3px;
+	}
+}
+
+@media (max-width: 360px){
+	.navbar-default {
+		display: none;
+	}
+}
+
+/* About */
+.about, .education, .skills {
+	margin:0;
+	padding: 50px 0;
+}
+
+.about h2, .education h2, .skills h2 {
+	letter-spacing: 5px;
+	text-align: center;
+	border-bottom: 2px solid #333;
+	padding: 15px;
+	font-weight: 700;
+}
+
+.about p {
+	font-size: 16px;
+	color:#AAA2A2;
+}
+
+.about img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* Education */
+/* Some of the stylings that are common with about section are combined with about */
+
+.education {
+	background-color: #F6F6F6;
+}
+
+.education .edu-info {
+	padding:20px 0;
+	text-align: center;
+}
+
+.education .edu-info p {
+	margin-top:20px;
+}
+
+.edu-left {
+	border-left: 1px solid silver;
+}
+
+.education h3 {
+	text-align: center;
+}
+
+.class-details {
+	padding-left: 20px;
+}
+
+.class-details ul {
+	margin-top:20px;
+	padding-left: 0;
+}
+
+.class-details ul>li {
+	list-style-type: none;
+}
+
+.class-details ul>li>a {
+	display: inline-block;
+	padding:5px;
+}
+
+.class-details h4 {
+	margin:0;
+}
+
+.class-details ul>li>a:hover,:visited,:active {
+	text-decoration: none;
+}
+
+.brand-img {
+	margin-top: 20px;
+}
+
+@media(max-width: 770px) {
+	.edu-left {
+		border:none;
+	}
+}
+
+/* Skills */
+
+.skills .skill-name {
+	padding:20px;
+	text-align: center;
+	color: #333;
+	margin:10px;
+	height: 200px;
+}
+
+
+.skills .skill-group {
+	margin:10px 0;
+}
+
+.language-logo {
+	padding-bottom: 10px;
+	max-height: 50%;
+	margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+	background: rgba(0, 0, 0, 0) radial-gradient(circle at center center , #43697c 10%, #1f313a 100%) repeat scroll 0 0;
+    color: white;
+}
+
+.footer h3 {
+	font-weight: 400;
+	border-bottom: 1px solid silver;
+}
+
+.footer h5 {
+	font-weight: 300;
+}
+
+.footer a {
+	color:white;
+	text-decoration: none;
+}
+
+/* Top button */
+.top {
+	display: block;
+	position:fixed;
+	bottom:20px;
+	right:30px;
+}
+
+.glyphicon-upload {
+	font-size: 30px;
+	color: silver;
+}

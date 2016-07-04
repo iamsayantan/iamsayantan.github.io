@@ -8,6 +8,14 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){     
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
     <body>
 
         <!-- Banner -->
@@ -19,7 +27,9 @@
                         <h1>sayantan das</h1>
                         <h2>web developer</h2>
                         <p>
-                            I'VE BEEN HELPING WEB DESIGN AND GROW YOUR BUSINESSES. START YOUR BUSINESS WITH NEW WEBSITE. LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET.
+                            Looking for working in an organization where I can push my limits and learn something new everyday. Also I want to contribute all my skills,
+                            passion and dedication towards web development to the best interest of the company.
+
                         </p>
                     </div>
                 </div>
@@ -27,9 +37,9 @@
                 <div class="container">
                     <div class="navbar navbar-default navbar-right">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#">Bio</a></li>
+                            <li><a class="scroll" href="#about">About</a></li>
+                            <li><a class="scroll" href="#education">Education</a></li>
+                            <li><a class="scroll" href="#skills">Skills</a></li>
                         </ul>
                     </div>
                 </div>
@@ -41,11 +51,9 @@
             <div class="container">
                 <h2>About me</h2>
                 <div class="col-md-8">
-                    <p>Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them with the aria-hidden="true" attribute.
-
-                        If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies – for instance, include additional content, visually hidden with the .sr-only class.
-
-                        If you're creating controls with no other text (such as a button> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive technologies. In this case, you could add an aria-label attribute on the control itself.</p>
+                    <p>
+                        Hi! I'm Sayantan. I am a web developer with knowledge primarily in PHP but with interest in Javascript and other Javascript frameworks like jQuery. I also have working knowledge in HTML5, CSS3 and the Bootstrap framework. I completed B.Tech in Electrical Engineering from Maulana Abul Kalm Azad University of Technology (formerly known as West Bengal University of Technology). I had my first introduction to computer programming with the C programming language during my UG course but later I found my way into web programming. I am extremely passionate about web development and other web related technologies. I want the excitement and challange that programming provides me. I'd love to work in a team of passionate developers from whom I can learn everyday. Apart from that I am an avid reader. After a hard day, a quality book is what I look for. And I could probably nuke any country for a plate of Biriyani.
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <img src="images/me.jpg" class="img-responsive" alt="Sayantan">
@@ -181,7 +189,7 @@
                 <div class="row skill-group">
                     <div class="col-md-4">
                         <div class="skill-name">
-                            <img src="images/language_logo/php.png" alt="" class="img-responsive language-logo">
+                          <img src="images/language_logo/php.png" alt="" class="img-responsive language-logo">
                             <p>I completed my B.Tech degree on Electrical Engineering from Maulana Abul Kalam Azad University of Technology on the year 2016 with 8.3 CGPA.</p>
                         </div>
                     </div>
@@ -238,7 +246,6 @@
                     <h5><em>Email:</em> <a target="_blank" href="mailto:das.sayantan94@gmail.com"><b>das.sayantan94@gmail.com</b></a></h5>
                     <h5><em>Facebook:</em> <a target="_blank" href="https://facebook.com/sayantan94"><b>facebook.com/sayantan94</b></a></h5>
                     <h5><em>Github:</em> <a target="_blank" href="https://github.com/iamsayantan"><b>github.com/iamsayantan</b></a></h5>
-                    <h5><em>Mobile:</em> <b>+91 8013220938</b></h5>
                 </div>
                 <div class="col-md-6">
                     <h3>Address</h3>
@@ -247,7 +254,7 @@
             </div>
         </div>
 
-        <a class="top" href="#"><span class="glyphicon glyphicon-upload"></span></a>
-
+        <!-- Smoothly scroll to the top -->
+        <script src="bootstrap/js/move-top.js"></script>
     </body>
 </html>

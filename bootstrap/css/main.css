@@ -43,8 +43,10 @@ Date: 16-06-2016
 
 .banner-header p {
 	padding: 10px 0;
+	font-size: 16px;
 	width: 66%;
 	margin:0 auto;
+	letter-spacing: 1px;
 }
 
 /* Adding responsiveness to the banner */
@@ -109,7 +111,7 @@ Date: 16-06-2016
 	text-align: center;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a,.navbar-default .navbar-nav>li>a:focus {
     color: #fff;
     font-size: 20px;
     letter-spacing: 5px;
@@ -155,6 +157,14 @@ Date: 16-06-2016
 	    font-size: 16px;
 	    letter-spacing: 3px;
 	}
+
+	.skills .skill-name {
+	padding:20px;
+	text-align: center;
+	margin:10px;
+	height: 300px;
+	font-size: 14px;
+}
 }
 
 @media (max-width: 360px){
@@ -179,7 +189,13 @@ Date: 16-06-2016
 
 .about p {
 	font-size: 16px;
-	color:#AAA2A2;
+	color:#333;
+}
+
+@media (max-width: 550px){
+	.about p, .skills .skill-name {
+		font-size: 14px;
+	}
 }
 
 .about img {
@@ -252,9 +268,10 @@ Date: 16-06-2016
 .skills .skill-name {
 	padding:20px;
 	text-align: center;
-	color: #333;
-	margin:10px;
+	margin:20px;
 	height: 200px;
+	font-size: 16px;
+	color:#333;
 }
 
 
@@ -289,11 +306,12 @@ Date: 16-06-2016
 }
 
 /* Top button */
-.top {
+#toTop {
 	display: block;
 	position:fixed;
 	bottom:20px;
 	right:30px;
+	background: url('images/move-up.png');
 }
 
 .glyphicon-upload {
